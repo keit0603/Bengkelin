@@ -1,4 +1,5 @@
 # 🚀 Bengkelin - Aplikasi Manajemen Bengkel Berbasis Web 🔥
+![Bengkelin - Logo](https://github.com/user-attachments/assets/8417e2b2-ebb9-4296-899a-6ce1165ffdf9)
 
 **Bengkelin** adalah sebuah sistem informasi manajemen berbasis web yang dikembangkan menggunakan bahasa pemrograman Java. Proyek ini dirancang sebagai solusi digital modern untuk membantu operasional harian bengkel servis motor, mulai dari pendataan pelanggan, pengelolaan stok spare part, hingga pencatatan transaksi servis secara akurat dan efisien.
 
@@ -65,21 +66,25 @@ Pastikan perangkat Anda telah terpasang perangkat lunak berikut:
    http://localhost:8080/
    ```
 
-   (Sesuaikan port jika berbeda.)
+   > Sesuaikan port jika berbeda.
 
 
 ## 📊 Preview Fitur Utama
 
 1. **Halaman Dashboard**
+   ![Dashboard - Image](https://github.com/user-attachments/assets/5a457179-5636-451b-908d-3a8071aaa5b9)
    Menyajikan ringkasan informasi penting secara real-time, seperti total pelanggan, transaksi harian, serta notifikasi untuk item dengan stok menipis.
 
 2. **Halaman Manajemen Transaksi**
+   ![Transaksi - Image](https://github.com/user-attachments/assets/61c05730-c25f-46cf-ac43-673122eeeaba)
    Menampilkan daftar transaksi yang telah dilakukan, dilengkapi dengan fitur filter berdasarkan rentang tanggal untuk kemudahan pencarian data.
 
 3. **Formulir Transaksi Interaktif**
+   ![Transaksi Interaktif - Image](https://github.com/user-attachments/assets/8ee324c3-8a5d-47b6-9c9b-212fdee732d6)
    Memungkinkan pembuatan transaksi baru dengan antarmuka yang intuitif, termasuk dropdown pencarian untuk memilih pelanggan dan spare part secara cepat.
 
 4. **Halaman Detail Invoice**
+   ![Invoice - Image](https://github.com/user-attachments/assets/8f918506-71c5-4456-a87a-663f03ec728a)
    Menampilkan rincian lengkap dari transaksi yang telah dibuat, termasuk detail layanan, biaya, dan informasi pelanggan. Halaman ini siap untuk dicetak sebagai bukti transaksi.
 
 
