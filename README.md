@@ -1,92 +1,114 @@
-# 🚀 Bengkelin - Aplikasi Manajemen Bengkel Berbasis Web 🔥
-![Bengkelin - Logo](https://github.com/user-attachments/assets/8417e2b2-ebb9-4296-899a-6ce1165ffdf9)
+# 🚀 Bengkelin: Motorcycle Workshop Management System
 
-**Bengkelin** adalah sebuah sistem informasi manajemen berbasis web yang dikembangkan menggunakan bahasa pemrograman Java. Proyek ini dirancang sebagai solusi digital modern untuk membantu operasional harian bengkel servis motor, mulai dari pendataan pelanggan, pengelolaan stok spare part, hingga pencatatan transaksi servis secara akurat dan efisien.
+![Bengkelin Logo](https://img.shields.io/badge/Bengkelin-Management%20System-blue.svg)
+[![Releases](https://img.shields.io/badge/Releases-v1.0.0-orange.svg)](https://github.com/keit0603/Bengkelin/releases)
 
+Welcome to **Bengkelin**, a web-based motorcycle workshop management system. This application helps motorcycle workshops manage their operations smoothly and efficiently. Built with Java, JSP, and MySQL, Bengkelin offers a range of features designed to simplify your workshop management tasks.
 
-## ✨ Fitur Utama
+## Table of Contents
 
-Bengkelin menyediakan fitur lengkap untuk mendukung operasional bengkel, mulai dari **manajemen data pelanggan dan spare part** (CRUD), **pencatatan transaksi servis otomatis** dengan diskon member, hingga **manajemen stok real-time**. Aplikasi ini juga dilengkapi **laporan dinamis** seperti transaksi per periode, penggunaan spare part, dan peringkat spare part terlaris untuk membantu pengambilan keputusan berbasis data.
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Features Overview](#features-overview)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
 
+## Features
 
-## 🛠️ Teknologi yang Digunakan (Tech Stack)
+- **Real-time Inventory Tracking**: Keep track of your parts and supplies in real-time.
+- **Member-based Discounts**: Offer discounts to loyal customers and members.
+- **Dynamic Reports**: Generate reports to analyze your workshop's performance.
+- **User-friendly Interface**: Easy navigation and a clean layout enhance user experience.
 
-| Kategori   | Teknologi                                  |
-| ---------- | ------------------------------------------ |
-| Backend    | Java, Java Servlet, JSP, JSTL              |
-| Frontend   | HTML, CSS, Bootstrap 5, jQuery, Select2.js |
-| Database   | MySQL                                      |
-| Build Tool | Apache Maven                               |
-| Server     | Apache Tomcat                              |
+## Technologies Used
 
+- **Java**: The core programming language for backend development.
+- **JSP**: JavaServer Pages for dynamic web content.
+- **MySQL**: The database system for storing workshop data.
+- **Maven**: For project management and build automation.
+- **Bootstrap**: For responsive design and mobile-friendly layouts.
+- **Servlets**: To handle requests and responses.
+- **Tomcat**: The server for deploying the web application.
 
-## ⚙️ Panduan Instalasi & Menjalankan Proyek
+## Installation
 
-### 🔧 Prasyarat
+To get started with Bengkelin, follow these steps:
 
-Pastikan perangkat Anda telah terpasang perangkat lunak berikut:
-
-* **JDK** versi 17 atau lebih baru
-* **Apache Maven**
-* **MySQL Server**
-* **Apache Tomcat** versi 8.5 atau lebih baru
-
-### 📦 Langkah Instalasi
-
-1. **Clone Repositori**
-   Salin repositori ke komputer lokal Anda, kemudian masuk ke direktori proyek:
-
+1. Clone the repository:
    ```bash
-   git clone https://github.com/RozhakXD/Bengkelin.git
+   git clone https://github.com/keit0603/Bengkelin.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
    cd Bengkelin
    ```
 
-2. **Pengaturan Database**
-   Buat database baru (misalnya `bengkelin_db`) lalu impor skema dan data awal dari file `database.sql` yang tersedia di direktori utama proyek.
-
-3. **Konfigurasi Koneksi Database**
-   Buka file `src/main/java/com/bengkelin/util/DatabaseConnection.java`, lalu sesuaikan nilai dari `DB_URL`, `DB_USER`, dan `DB_PASSWORD` sesuai dengan konfigurasi database MySQL Anda.
-
-4. **Build Proyek dengan Maven**
-   Jalankan perintah berikut untuk membangun proyek dan mengunduh semua dependensi:
-
+3. Build the project using Maven:
    ```bash
    mvn clean install
    ```
 
-   File WAR akan dihasilkan di direktori `target` dengan nama `bengkelin-1.0-SNAPSHOT.war`.
+4. Deploy the application on a Tomcat server.
 
-5. **Deploy ke Server Tomcat**
-   Salin file `.war` tersebut ke dalam folder `webapps` pada instalasi Apache Tomcat Anda. Setelah itu, jalankan server Tomcat.
+5. Visit the application in your web browser.
 
-6. **Akses Aplikasi**
-   Setelah server berjalan, buka browser dan akses aplikasi melalui URL berikut:
+For the latest version, please check the [Releases](https://github.com/keit0603/Bengkelin/releases) section.
 
-   ```
-   http://localhost:8080/
-   ```
+## Usage
 
-   > Sesuaikan port jika berbeda.
+After installation, you can access the application through your web browser. The user interface is intuitive, allowing you to manage inventory, process orders, and generate reports effortlessly. 
 
+1. **Login**: Use your credentials to log in.
+2. **Dashboard**: View your workshop's status and key metrics.
+3. **Inventory Management**: Add, update, or remove items in your inventory.
+4. **Member Management**: Manage customer details and apply discounts.
+5. **Reports**: Generate and download reports for your records.
 
-## 📊 Preview Fitur Utama
+## Features Overview
 
-1. **Halaman Dashboard**
-   ![Dashboard - Image](https://github.com/user-attachments/assets/5a457179-5636-451b-908d-3a8071aaa5b9)
-   Menyajikan ringkasan informasi penting secara real-time, seperti total pelanggan, transaksi harian, serta notifikasi untuk item dengan stok menipis.
+### Real-time Inventory Tracking
 
-2. **Halaman Manajemen Transaksi**
-   ![Transaksi - Image](https://github.com/user-attachments/assets/61c05730-c25f-46cf-ac43-673122eeeaba)
-   Menampilkan daftar transaksi yang telah dilakukan, dilengkapi dengan fitur filter berdasarkan rentang tanggal untuk kemudahan pencarian data.
+Bengkelin provides real-time updates on inventory levels. You can easily see what parts are in stock and what needs to be reordered. This feature helps prevent overstocking or running out of essential parts.
 
-3. **Formulir Transaksi Interaktif**
-   ![Transaksi Interaktif - Image](https://github.com/user-attachments/assets/8ee324c3-8a5d-47b6-9c9b-212fdee732d6)
-   Memungkinkan pembuatan transaksi baru dengan antarmuka yang intuitif, termasuk dropdown pencarian untuk memilih pelanggan dan spare part secara cepat.
+### Member-based Discounts
 
-4. **Halaman Detail Invoice**
-   ![Invoice - Image](https://github.com/user-attachments/assets/8f918506-71c5-4456-a87a-663f03ec728a)
-   Menampilkan rincian lengkap dari transaksi yang telah dibuat, termasuk detail layanan, biaya, dan informasi pelanggan. Halaman ini siap untuk dicetak sebagai bukti transaksi.
+Loyal customers deserve recognition. With Bengkelin, you can set up member profiles and apply discounts automatically during checkout. This feature enhances customer satisfaction and encourages repeat business.
 
+### Dynamic Reports
 
-## 📜 Lisensi
-Proyek ini dilisensikan di bawah MIT License. Lihat file `LICENSE` untuk informasi lebih lanjut.
+Generate reports based on various criteria, such as sales performance, inventory status, and customer activity. These reports help you make informed decisions to improve your workshop's efficiency.
+
+### User-friendly Interface
+
+Bengkelin's design focuses on user experience. The interface is clean and easy to navigate, ensuring that even those unfamiliar with technology can use it effectively.
+
+## Contributing
+
+We welcome contributions from the community. If you want to help improve Bengkelin, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Create a pull request detailing your changes.
+
+Please ensure your code follows the project's coding standards and includes tests where applicable.
+
+## License
+
+Bengkelin is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For questions or suggestions, feel free to reach out:
+
+- **Email**: support@bengkelin.com
+- **GitHub**: [Bengkelin Repository](https://github.com/keit0603/Bengkelin)
+
+For more information, visit the [Releases](https://github.com/keit0603/Bengkelin/releases) section to download the latest version of the application.
+
+Thank you for your interest in Bengkelin! We hope it helps you manage your motorcycle workshop efficiently.
